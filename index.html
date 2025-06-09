@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/arEhl2z.png" />
+
+    <title>Yovel Gabbay - Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f9f9f9;
+        color: #222;
+      }
+
+      header {
+        background-color: #007acc;
+        color: white;
+        padding: 1rem 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #007acc;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .card {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .img-card {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: #007acc;
+      }
+
+      .features,
+      .tech {
+        margin: 0.5rem 0 1rem;
+        padding-left: 1rem;
+      }
+
+      .features li,
+      .tech li {
+        margin-bottom: 0.3rem;
+      }
+
+      .btn,
+      .btn-secondery {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+
+        color: white;
+        border: none;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .btn {
+        background-color: #007acc;
+      }
+      .btn-secondery {
+        background-color: #259cec;
+      }
+
+      .btn:hover,
+      .btn-secondery:hover {
+        background-color: #005e99;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Yovel Gabbay - Projects</header>
+
+    <main>
+      <h2>My Portfolio</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Promptimizer – Chrome Extension</h3>
+          <img class="img-card" src="https://i.imgur.com/QbXJD6b.png" alt="" />
+          <p>
+            A Chrome extension that helps users refine and improve prompts on
+            platforms like ChatGPT, Claude, and Gemini for better AI responses.
+          </p>
+          <ul class="features">
+            <li>One-click optimization</li>
+            <li>Smart Prompt Classification</li>
+            <li>Multi-platform support</li>
+            <li>Privacy-Focused</li>
+            <li>Rate Limiting</li>
+          </ul>
+          <strong>Technologies:</strong>
+          <ul class="tech">
+            <li>JavaScript, HTML, CSS</li>
+            <li>Chrome Extension API, Local Storage</li>
+          </ul>
+          <a
+            class="btn"
+            href="https://github.com/Yovelgabay/Promptimzer"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Electric Vehicle Routing Optimization</h3>
+          <img class="img-card" src="https://i.imgur.com/2Vj72BQ.png" alt="" />
+          <p>
+            Research project using clustering and genetic algorithms to optimize
+            route planning for electric vehicles while considering real-world
+            charging constraints.
+          </p>
+          <ul class="features">
+            <li>Dynamic route updates based on real-time data</li>
+            <li>Realistic charging station constraints</li>
+            <li>Interactive visualizations</li>
+          </ul>
+          <strong>Technologies:</strong>
+          <ul class="tech">
+            <li>Python, Genetic Algorithm, K-Means</li>
+          </ul>
+          <a
+            class="btn"
+            href="https://github.com/Yovelgabay/Electric-Vehicle-Routing"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            class="btn-secondery"
+            href="https://www.mdpi.com/1999-5903/17/3/97"
+            target="_blank"
+            >Published Article</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Gaming Space – Web Platform</h3>
+          <img class="img-card" src="https://i.imgur.com/cnFGz41.png" alt="" />
+          <p>
+            An interactive platform for gamers to list, buy, and sell games
+            online.
+          </p>
+          <ul class="features">
+            <li>User authentication</li>
+            <li>Post, buy, and manage listings</li>
+            <li>Integrated with MongoDB</li>
+          </ul>
+          <strong>Technologies:</strong>
+          <ul class="tech">
+            <li>React, JavaScript, HTML, CSS</li>
+            <li>MongoDB, Express.js</li>
+          </ul>
+          <a
+            class="btn"
+            href="https://github.com/Yovelgabay/MarketPlace"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            class="btn-secondery"
+            href="https://www.mdpi.com/1999-5903/17/3/97"
+            target="_blank"
+            >Visit website</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer
+      style="
+        text-align: center;
+        padding: 1rem;
+        background: #f0f0f0;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      "
+    >
+      <p>© 2025 Yovel Gabbay</p>
+      <p>
+        <a
+          href="mailto:yovel599@gmail.com"
+          style="color: #007acc; text-decoration: none"
+          >yovel599@gmail.com</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/yovel-gabbay/"
+          target="_blank"
+          style="color: #007acc; text-decoration: none"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
