@@ -7,6 +7,12 @@
 
     <title>Yovel Gabbay - Portfolio</title>
     <style>
+      main {
+        padding: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
       body {
         margin: 0;
         font-family: "Segoe UI", sans-serif;
@@ -113,6 +119,11 @@
 
     <main>
       <h2>My Portfolio</h2>
+      <p style="text-align: center; margin-bottom: 2rem; color: #555">
+        Selected projects showcasing my work in web development, AI tools, and
+        educational software.
+      </p>
+
       <div class="projects">
         <div class="card">
           <h3>Promptimizer – Chrome Extension</h3>
@@ -143,7 +154,21 @@
 
         <div class="card">
           <h3>Electric Vehicle Routing Optimization</h3>
-          <img class="img-card" src="images/picture1.png" alt="" />
+          <div
+            style="
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+              border-radius: 12px;
+            "
+          >
+            <video id="video1" class="img-card" autoplay muted loop playsinline>
+              <source src="images/ga.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
           <p>
             Research project using clustering and genetic algorithms to optimize
             route planning for electric vehicles while considering real-world
@@ -202,29 +227,48 @@
             >Visit website</a
           >
         </div>
+        <div class="card">
+          <h3>Divide Like a King – Educational Math Game</h3>
+          <video class="img-card" autoplay muted loop playsinline>
+            <source src="images/divide.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <p>
+            An interactive browser game that helps children practice long
+            division in a fun and step-by-step way. Designed with animations and
+            gamification to boost engagement.
+          </p>
+          <ul class="features">
+            <li>Dynamic step-by-step feedback</li>
+            <li>Animated UI with progress tracker</li>
+            <li>Built with React</li>
+          </ul>
+          <strong>Technologies:</strong>
+          <ul class="tech">
+            <li>React, TypeScript</li>
+          </ul>
+          <a
+            class="btn"
+            href="https://github.com/Yovelgabay/Divide-Like-a-King"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div>
       </div>
     </main>
     <footer
       style="
         text-align: center;
-        padding: 1rem;
+        padding: 1.5rem;
         background: #f0f0f0;
-        margin-top: 2rem;
         font-size: 0.9rem;
       "
     >
-      <p>© 2025 Yovel Gabbay</p>
       <p>
-        <a
-          href="mailto:yovel599@gmail.com"
-          style="color: #007acc; text-decoration: none"
-          >yovel599@gmail.com</a
-        >
-        |
-        <a
-          href="https://www.linkedin.com/in/yovel-gabbay/"
-          target="_blank"
-          style="color: #007acc; text-decoration: none"
+        © 2025 Yovel Gabbay ·
+        <a href="mailto:yovel599@gmail.com">yovel599@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/yovel-gabbay/" target="_blank"
           >LinkedIn</a
         >
       </p>
